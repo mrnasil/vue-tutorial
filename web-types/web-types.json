@@ -1,7 +1,7 @@
 {
   "framework": "vue",
-  "name": "v-onboarding",
-  "version": "2.8.2",
+  "name": "vue3-tut",
+  "version": "1.0.0",
   "contributions": {
     "html": {
       "description-markup": "markdown",

@@ -1,12 +1,12 @@
 {
-  "name": "v-onboarding",
-  "version": "2.8.2",
-  "description": "v-onboarding is a super-slim, fully-typed onboarding component for Vue 3",
+  "name": "vue3-tut",
+  "version": "1.0.1",
+  "description": "vue3-tut is a super-slim, fully-typed onboarding component for Vue 3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fatihsolhan/v-onboarding.git"
+    "url": "git+https://github.com/mrnasil/vue-tutorial.git"
   },
-  "author": "Fatih Solhan",
+  "author": "Faruk ARIGÜN",
   "license": "MIT",
   "private": false,
   "keywords": [
@@ -25,18 +25,18 @@
     "web-types"
   ],
   "types": "./dist/index.d.ts",
-  "main": "./dist/v-onboarding.umd.js",
-  "module": "./dist/v-onboarding.es.js",
+  "main": "./dist/vue-tutorial.umd.js",
+  "module": "./dist/vue-tutorial.es.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/v-onboarding.es.js",
-      "require": "./dist/v-onboarding.umd.js"
+      "import": "./dist/vue-tutorial.es.js",
+      "require": "./dist/vue-tutorial.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
-    "build": "yarn update-web-types && vite build",
+    "build": "pnpm update-web-types && vite build",
     "update-web-types": "vue-docgen-web-types",
     "docs:dev": "cd docs && npm run dev",
     "docs:generate": "cd docs && npm run generate",
@@ -47,38 +47,38 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "@vueuse/integrations": "^10.7.2",
-    "focus-trap": "^7",
-    "vue": "^3.2.21"
+    "@popperjs/core": "^2.11.8",
+    "@vueuse/integrations": "^10.11.0",
+    "focus-trap": "^7.5.4",
+    "vue": "^3.4.31"
   },
   "peerDependencies": {
-    "vue": "^3.2.21"
+    "vue": "^3.4.31"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.3.0",
-    "@types/lodash.merge": "^4.6.6",
-    "@types/node": "^16.11.7",
-    "@vitejs/plugin-vue": "^1.9.4",
-    "@vue/test-utils": "^2.2.10",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/lodash.merge": "^4.6.9",
+    "@types/node": "^16.18.101",
+    "@vitejs/plugin-vue": "^1.10.2",
+    "@vue/test-utils": "^2.4.6",
     "cz-conventional-changelog": "3.3.0",
-    "happy-dom": "^8.6.0",
+    "happy-dom": "^8.9.0",
     "lodash.merge": "^4.6.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.8",
     "rollup-plugin-vue": "^6.0.0",
-    "sass": "^1.45.0",
-    "semantic-release": "^19.0.2",
-    "tsup": "^5.7.0",
-    "unbuild": "^0.5.11",
-    "vite": "^2.6.14",
-    "vitest": "^0.28.5",
-    "vue-docgen-web-types": "^0.1.7"
+    "sass": "^1.77.6",
+    "semantic-release": "^19.0.5",
+    "tsup": "^5.12.9",
+    "unbuild": "^0.5.13",
+    "vite": "^2.9.18",
+    "vitest": "^0.34.6",
+    "vue-docgen-web-types": "^0.1.8"
   },
   "web-types": "web-types/web-types.json",
   "bugs": {
-    "url": "https://github.com/fatihsolhan/v-onboarding/issues"
+    "url": "https://github.com/mrnasil/vue-tutorial/issues"
   },
-  "homepage": "https://github.com/fatihsolhan/v-onboarding#readme",
+  "homepage": "https://github.com/mrnasil/vue-tutorial#readme",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

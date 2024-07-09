@@ -7,13 +7,13 @@
         <div class="w-auto px-4 pt-16 pb-8 mx-auto sm:pt-24 lg:px-8">
           <h1
             class="max-w-5xl text-center mx-auto text-4xl font-extrabold sm:text-7xl lg:text-8xl xl:text-8xl !leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#42b883] via-[#42b883] to-white">
-            v-onboarding</h1>
-          <p class="mx-auto mt-6 text-lg sm:text-xl font-medium leading-tight text-center text-gray-400">v-onboarding is
+            vue-tutorial</h1>
+          <p class="mx-auto mt-6 text-lg sm:text-xl font-medium leading-tight text-center text-gray-400">vue-tutorial is
             a super-slim, fully-typed onboarding component for Vue 3</p>
         </div>
         <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-4 ">
           <AppButton loading={loading} variant="primary" @click="see">See it in action</AppButton>
-          <a href="https://v-onboarding-docs.fatihsolhan.com">
+          <a href="https://vue-tutorial-docs.fatihsolhan.com">
             <AppButton variant="secondary">Documentation</AppButton>
           </a>
         </div>
@@ -25,9 +25,9 @@
   </div>
 </template>
 <script lang="ts">
-import type { VOnboardingWrapperOptions } from 'v-onboarding';
-import { VOnboardingWrapper, useVOnboarding } from 'v-onboarding';
-import 'v-onboarding/dist/style.css';
+import type { VOnboardingWrapperOptions } from '../../dist/vue-tutorial';
+import { VOnboardingWrapper, useVOnboarding } from '../../distvue-tutorial';
+import '../../dist/vue-tutorial/dist/style.css';
 import { ComponentPublicInstance, computed, defineComponent, onMounted, ref } from 'vue';
 import CatType from '../types/CatType';
 import AppButton from './components/AppButton.vue';
@@ -77,7 +77,7 @@ export default defineComponent({
           },
           content: {
             title: 'Nice to see you here!',
-            description: 'You can use <strong>v-onboarding</strong> to show some information about your app, or to explain how to use it',
+            description: 'You can use <strong>vue-tutorial</strong> to show some information about your app, or to explain how to use it',
             html: true
           }
         },
@@ -86,7 +86,7 @@ export default defineComponent({
             element: "#cats",
           },
           content: {
-            title: 'Here is some cat breeds to show you how v-onboarding works',
+            title: 'Here is some cat breeds to show you how vue-tutorial works',
             description: 'Click next to see information about each cat.',
           }
         },

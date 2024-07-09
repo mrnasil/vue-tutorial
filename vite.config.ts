@@ -24,8 +24,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'v-onboarding',
-      fileName: (format) => `v-onboarding.${format}.js`
+      name: 'vue-tutorial',
+      fileName: (format) => `vue-tutorial.${format}.js`
     },
     rollupOptions: {
       input: 'src/index.ts',
